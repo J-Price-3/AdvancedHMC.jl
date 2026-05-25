@@ -150,7 +150,7 @@ end
 
 function step(
     lf::ImplicitMidpoint{T},
-    h::Hamiltonian{<:AbstractRiemannianMetric},
+    h::Hamiltonian,
     z::P,
     n_steps::Int=1;
     fwd::Bool=n_steps > 0,  # simulate hamiltonian backward when n_steps < 0
